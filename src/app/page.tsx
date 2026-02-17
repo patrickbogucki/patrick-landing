@@ -127,10 +127,6 @@ export default function Home() {
           </Card>
         </div>
 
-        {/* Footer */}
-        <footer className="mt-24 pb-8 text-center text-sm text-gray-600">
-          <p>© 2026 • Built with care</p>
-        </footer>
       </main>
     </div>
   )
