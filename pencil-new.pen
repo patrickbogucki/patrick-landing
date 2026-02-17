@@ -1,0 +1,894 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "NbACv",
+      "x": 0,
+      "y": 0,
+      "name": "Patrick Landing v4",
+      "clip": true,
+      "width": 1440,
+      "height": "fit_content(1200)",
+      "fill": "#050508",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "7UwzI",
+          "x": 0,
+          "y": 0,
+          "name": "BG Orbs",
+          "width": 1440,
+          "height": 1165,
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "hHR0D",
+              "x": -200,
+              "y": -150,
+              "name": "Orb Blue",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#1E40AF44",
+                    "position": 0
+                  },
+                  {
+                    "color": "#1E40AF00",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 1000,
+              "height": 1000,
+              "effect": {
+                "type": "blur",
+                "radius": 100
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "T97Ws",
+              "x": 600,
+              "y": 50,
+              "name": "Orb Cyan",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0891B233",
+                    "position": 0
+                  },
+                  {
+                    "color": "#0891B200",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 800,
+              "height": 800,
+              "effect": {
+                "type": "blur",
+                "radius": 90
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "O9Pyg",
+              "x": 100,
+              "y": 700,
+              "name": "Orb Indigo",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#4F46E522",
+                    "position": 0
+                  },
+                  {
+                    "color": "#4F46E500",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 900,
+              "height": 900,
+              "effect": {
+                "type": "blur",
+                "radius": 80
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "Mo6Jn",
+              "x": 800,
+              "y": 1000,
+              "name": "Orb Teal",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0E749022",
+                    "position": 0
+                  },
+                  {
+                    "color": "#0E749000",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 700,
+              "height": 700,
+              "effect": {
+                "type": "blur",
+                "radius": 70
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5I5rS",
+          "x": 0,
+          "y": 0,
+          "name": "Content",
+          "width": 1440,
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            40,
+            80,
+            60,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "jFKGu",
+              "name": "Nav",
+              "width": "fill_container",
+              "justifyContent": "end",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UJEod",
+                  "name": "socials",
+                  "fill": "#FFFFFF08",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFFFFF0A"
+                  },
+                  "effect": {
+                    "type": "background_blur",
+                    "radius": 20
+                  },
+                  "gap": 4,
+                  "padding": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hI8I0",
+                      "name": "lnBtn",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "eEI5p",
+                          "name": "lnIco",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#64748B"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rn3Tm",
+                      "name": "emBtn",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "6bztf",
+                          "name": "emIco",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "#64748B"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Mo6Cc",
+                      "name": "ghBtn",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Rgwbj",
+                          "name": "ghIco",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "github",
+                          "iconFontFamily": "lucide",
+                          "fill": "#64748B"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GWvpg",
+              "name": "Hero",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CVIsN",
+                  "name": "heroLeft",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OQj7m",
+                      "name": "firstName",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#E2E8F0",
+                            "position": 0
+                          },
+                          {
+                            "color": "#64748B",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "content": "Patrick",
+                      "lineHeight": 0.9,
+                      "fontFamily": "Instrument Serif",
+                      "fontSize": 120,
+                      "fontWeight": "normal",
+                      "letterSpacing": -4
+                    },
+                    {
+                      "type": "text",
+                      "id": "mVJjX",
+                      "name": "lastName",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 90,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#3B82F6",
+                            "position": 0
+                          },
+                          {
+                            "color": "#06B6D4",
+                            "position": 0.5
+                          },
+                          {
+                            "color": "#8B5CF6",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "content": "Bogucki",
+                      "lineHeight": 0.9,
+                      "fontFamily": "Inter",
+                      "fontSize": 120,
+                      "fontWeight": "900",
+                      "letterSpacing": -5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ls8rj",
+              "name": "Projects",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lFUn2",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "height": 220,
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AOIvT",
+                      "name": "Project Alpha",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF06",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": {
+                          "type": "gradient",
+                          "gradientType": "linear",
+                          "enabled": true,
+                          "rotation": 225,
+                          "size": {
+                            "height": 1
+                          },
+                          "colors": [
+                            {
+                              "color": "#3B82F633",
+                              "position": 0
+                            },
+                            {
+                              "color": "#FFFFFF08",
+                              "position": 1
+                            }
+                          ]
+                        }
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 24
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "owJwP",
+                          "name": "c1Icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "code",
+                          "iconFontFamily": "lucide",
+                          "fill": "#60A5FA"
+                        },
+                        {
+                          "type": "text",
+                          "id": "G0POr",
+                          "name": "c1Title",
+                          "fill": "#E2E8F0",
+                          "content": "Project Alpha",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "R6IoU",
+                          "name": "c1Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Real-time data visualization and dashboards.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "w2Hns",
+                          "name": "c1Arrow",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#60A5FA66"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mkb0H",
+                      "name": "Project Beta",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF06",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": {
+                          "type": "gradient",
+                          "gradientType": "linear",
+                          "enabled": true,
+                          "rotation": 225,
+                          "size": {
+                            "height": 1
+                          },
+                          "colors": [
+                            {
+                              "color": "#06B6D433",
+                              "position": 0
+                            },
+                            {
+                              "color": "#FFFFFF08",
+                              "position": 1
+                            }
+                          ]
+                        }
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 24
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "FvOYB",
+                          "name": "c2Icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "cpu",
+                          "iconFontFamily": "lucide",
+                          "fill": "#22D3EE"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fx7KP",
+                          "name": "c2Title",
+                          "fill": "#E2E8F0",
+                          "content": "Project Beta",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "M9HVA",
+                          "name": "c2Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Embedded systems and hardware experiments.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "bafYg",
+                          "name": "c2Arrow",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#22D3EE66"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2gRWC",
+                      "name": "Project Gamma",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF06",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": {
+                          "type": "gradient",
+                          "gradientType": "linear",
+                          "enabled": true,
+                          "rotation": 225,
+                          "size": {
+                            "height": 1
+                          },
+                          "colors": [
+                            {
+                              "color": "#8B5CF633",
+                              "position": 0
+                            },
+                            {
+                              "color": "#FFFFFF08",
+                              "position": 1
+                            }
+                          ]
+                        }
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 24
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "2jwuI",
+                          "name": "c3Icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "gamepad-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "#A78BFA"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TOzQC",
+                          "name": "c3Title",
+                          "fill": "#E2E8F0",
+                          "content": "Project Gamma",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9v4Ap",
+                          "name": "c3Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Interactive games and creative code.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "4iYJw",
+                          "name": "c3Arrow",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#A78BFA66"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "P9jR8",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "height": 220,
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "twgCQ",
+                      "name": "Project Delta",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF06",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": {
+                          "type": "gradient",
+                          "gradientType": "linear",
+                          "enabled": true,
+                          "rotation": 225,
+                          "size": {
+                            "height": 1
+                          },
+                          "colors": [
+                            {
+                              "color": "#2563EB33",
+                              "position": 0
+                            },
+                            {
+                              "color": "#FFFFFF08",
+                              "position": 1
+                            }
+                          ]
+                        }
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 24
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "bYa8e",
+                          "name": "c4Icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "music",
+                          "iconFontFamily": "lucide",
+                          "fill": "#60A5FA"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AjZUF",
+                          "name": "c4Title",
+                          "fill": "#E2E8F0",
+                          "content": "Project Delta",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RWcLT",
+                          "name": "c4Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Audio tools and sound design.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "4Od8g",
+                          "name": "c4Arrow",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#60A5FA66"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ke19V",
+                      "name": "Project Epsilon",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF06",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": {
+                          "type": "gradient",
+                          "gradientType": "linear",
+                          "enabled": true,
+                          "rotation": 225,
+                          "size": {
+                            "height": 1
+                          },
+                          "colors": [
+                            {
+                              "color": "#0E749033",
+                              "position": 0
+                            },
+                            {
+                              "color": "#FFFFFF08",
+                              "position": 1
+                            }
+                          ]
+                        }
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 24
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "we7br",
+                          "name": "c5Icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "camera",
+                          "iconFontFamily": "lucide",
+                          "fill": "#2DD4BF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "0KZQ3",
+                          "name": "c5Title",
+                          "fill": "#E2E8F0",
+                          "content": "Project Epsilon",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "7I1ob",
+                          "name": "c5Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Photography and visual media.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "uzhYr",
+                          "name": "c5Arrow",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#2DD4BF66"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cnF8x",
+                      "name": "Project Zeta",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF06",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": {
+                          "type": "gradient",
+                          "gradientType": "linear",
+                          "enabled": true,
+                          "rotation": 225,
+                          "size": {
+                            "height": 1
+                          },
+                          "colors": [
+                            {
+                              "color": "#6366F133",
+                              "position": 0
+                            },
+                            {
+                              "color": "#FFFFFF08",
+                              "position": 1
+                            }
+                          ]
+                        }
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 24
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 24,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "kn94b",
+                          "name": "c6Icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "wrench",
+                          "iconFontFamily": "lucide",
+                          "fill": "#818CF8"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sBsr8",
+                          "name": "c6Title",
+                          "fill": "#E2E8F0",
+                          "content": "Project Zeta",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "iKyMY",
+                          "name": "c6Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Utility tools and automation scripts.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "m6IqG",
+                          "name": "c6Arrow",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#818CF866"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
