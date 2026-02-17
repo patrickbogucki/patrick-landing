@@ -1,0 +1,102 @@
+---
+---
+
+<section class="hero" aria-label="Introduction">
+  <div class="hero-content">
+    <div class="name-block">
+      <h1 class="first-name">Patrick</h1>
+      <h1 class="last-name">Bogucki</h1>
+    </div>
+    <p class="tagline">Developer &bull; Creator &bull; Builder</p>
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .hero-content {
+    text-align: center;
+    animation: fadeUp 1s ease-out both;
+  }
+
+  .name-block {
+    margin-bottom: 1.5rem;
+  }
+
+  .first-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    font-size: clamp(3.5rem, 10vw, 8rem);
+    color: var(--accent-warm);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-shadow: 0 0 80px var(--accent-warm-glow);
+  }
+
+  .last-name {
+    font-family: 'Inter Variable', 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: clamp(2.8rem, 8vw, 6.5rem);
+    color: var(--accent-cool);
+    line-height: 1.1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-shadow: 0 0 80px var(--accent-cool-glow);
+  }
+
+  .tagline {
+    font-size: clamp(0.9rem, 2vw, 1.15rem);
+    color: var(--text-muted);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .scroll-line {
+    display: block;
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(to bottom, var(--text-faint), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  @media (max-width: 480px) {
+    .tagline {
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+    }
+  }
+</style>

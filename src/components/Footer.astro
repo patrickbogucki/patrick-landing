@@ -1,0 +1,21 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <p class="copyright">&copy; {year} Patrick Bogucki</p>
+</footer>
+
+<style>
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    color: var(--text-faint);
+    letter-spacing: 0.05em;
+  }
+</style>
