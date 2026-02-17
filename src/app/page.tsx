@@ -19,12 +19,12 @@ export default function Home() {
         {/* Hero Section */}
         <section className="mb-24 space-y-6">
           <div className="space-y-4">
-            <h2 className="text-sm font-medium tracking-[0.2em] text-gray-500 uppercase">Portfolio</h2>
-            <h1 className="text-5xl font-bold tracking-tight md:text-7xl">
-              <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+
+            <div className="inline-block border-b border-white/20 pb-4 mb-2">
+              <h1 className="text-4xl font-light tracking-[0.2em] text-white uppercase md:text-6xl">
                 Patrick Bogucki
-              </span>
-            </h1>
+              </h1>
+            </div>
             <p className="max-w-[600px] text-lg text-gray-400 md:text-xl leading-relaxed">
               Finding problems and building solutions. Welcome to my corner of the web.
             </p>
