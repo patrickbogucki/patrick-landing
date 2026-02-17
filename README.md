@@ -68,6 +68,6 @@ A modern, responsive personal portfolio website built with Next.js and Tailwind 
 
 ## 📬 Contact
 
-- **LinkedIn**: [Patrick Bogucki](https://ca.linkedin.com/in/patrick-bogucki-5095b81b)
+- **LinkedIn**: [Patrick Bogucki](https://www.linkedin.com/in/patrick-bogucki-5095b81b/?originalSubdomain=ca)
 - **GitHub**: [@patrickbogucki](https://github.com/patrickbogucki)
 - **Email**: [patrickbogucki@gmail.com](mailto:patrickbogucki@gmail.com)
