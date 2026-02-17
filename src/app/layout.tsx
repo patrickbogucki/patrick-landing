@@ -28,20 +28,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
       >
         {children}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.addEventListener('pageshow', function(event) {
-                if (event.persisted) {
-                  // Page was restored from bfcache — force repaint
-                  document.body.style.display = 'none';
-                  document.body.offsetHeight; // trigger reflow
-                  document.body.style.display = '';
-                }
-              });
-            `,
-          }}
-        />
       </body>
     </html>
   );
