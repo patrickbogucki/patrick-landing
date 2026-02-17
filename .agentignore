@@ -1,0 +1,15 @@
+# Design files
+designs/
+*.pen
+
+# Build output
+.next/
+dist/
+out/
+
+# Dependencies
+node_modules/
+
+# Lock files
+package-lock.json
+*.lock
