@@ -6,16 +6,16 @@ import { Separator } from "@/components/ui/separator"
 
 export default function Home() {
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden bg-black">
       {/* Background Gradients */}
-      <div className="fixed inset-0 -z-10 h-full w-full bg-black">
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+      <div className="absolute top-0 left-0 right-0 h-[800px] w-full pointer-events-none">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
         <div className="absolute left-[-10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-purple-500/10 blur-[100px]"></div>
         <div className="absolute right-[-10%] bottom-[-10%] h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[100px]"></div>
         <div className="absolute left-[20%] top-[20%] h-[300px] w-[300px] rounded-full bg-indigo-500/10 blur-[120px]"></div>
       </div>
 
-      <main className="container mx-auto max-w-4xl px-6 py-24 md:py-32">
+      <main className="container mx-auto max-w-4xl px-6 py-24 md:py-32 relative z-10">
         {/* Hero Section */}
         <section className="mb-24 space-y-6">
           <div className="space-y-4">
