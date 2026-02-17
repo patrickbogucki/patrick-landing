@@ -31,15 +31,15 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base hover:bg-white/10 hover:text-white transition-all duration-300">
+            <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base transition-all duration-300 hover:scale-105 hover:border-blue-400/50 hover:bg-blue-400/10 hover:text-blue-400 hover:shadow-lg hover:shadow-blue-400/20">
               <Linkedin className="h-5 w-5" />
               LinkedIn
             </Button>
-            <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base hover:bg-white/10 hover:text-white transition-all duration-300">
+            <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base transition-all duration-300 hover:scale-105 hover:border-purple-400/50 hover:bg-purple-400/10 hover:text-purple-400 hover:shadow-lg hover:shadow-purple-400/20">
               <Github className="h-5 w-5" />
               GitHub
             </Button>
-            <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base hover:bg-white/10 hover:text-white transition-all duration-300">
+            <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base transition-all duration-300 hover:scale-105 hover:border-indigo-400/50 hover:bg-indigo-400/10 hover:text-indigo-400 hover:shadow-lg hover:shadow-indigo-400/20">
               <Mail className="h-5 w-5" />
               Email
             </Button>
