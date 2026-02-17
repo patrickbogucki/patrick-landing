@@ -32,19 +32,19 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-4 pt-4">
             <a href="https://ca.linkedin.com/in/patrick-bogucki-5095b81b" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base transition-all duration-300 hover:scale-105 hover:border-blue-400/50 hover:bg-blue-400/10 hover:text-blue-400 hover:shadow-lg hover:shadow-blue-400/20">
+              <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-blue-500/20 bg-blue-500/10 px-6 text-base text-blue-400 shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)] transition-all duration-300 hover:scale-105 hover:border-blue-400/50 hover:bg-blue-400/10 hover:text-blue-300 hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.5)]">
                 <Linkedin className="h-5 w-5" />
                 LinkedIn
               </Button>
             </a>
             <a href="https://github.com/patrickbogucki" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base transition-all duration-300 hover:scale-105 hover:border-purple-400/50 hover:bg-purple-400/10 hover:text-purple-400 hover:shadow-lg hover:shadow-purple-400/20">
+              <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-purple-500/20 bg-purple-500/10 px-6 text-base text-purple-400 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)] transition-all duration-300 hover:scale-105 hover:border-purple-400/50 hover:bg-purple-400/10 hover:text-purple-300 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.5)]">
                 <Github className="h-5 w-5" />
                 GitHub
               </Button>
             </a>
             <a href="mailto:patrickbogucki@gmail.com">
-              <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-white/10 bg-white/5 px-6 text-base transition-all duration-300 hover:scale-105 hover:border-indigo-400/50 hover:bg-indigo-400/10 hover:text-indigo-400 hover:shadow-lg hover:shadow-indigo-400/20">
+              <Button variant="outline" size="lg" className="h-12 gap-3 rounded-full border-emerald-500/20 bg-emerald-500/10 px-6 text-base text-emerald-400 shadow-[0_0_20px_-5px_rgba(16,185,129,0.3)] transition-all duration-300 hover:scale-105 hover:border-emerald-400/50 hover:bg-emerald-400/10 hover:text-emerald-300 hover:shadow-[0_0_30px_-5px_rgba(16,185,129,0.5)]">
                 <Mail className="h-5 w-5" />
                 Email
               </Button>
