@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -60,23 +61,25 @@ export default function Home() {
 
         {/* Projects Grid */}
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:gap-10">
-          <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2">
-            <div className="relative p-8 h-full flex flex-col">
-              <CardHeader className="p-0 mb-6">
-                <CardTitle className="text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">Project Alpha</CardTitle>
-                <CardDescription className="mt-3 text-lg text-gray-400 line-clamp-3 leading-relaxed">
-                  A full-stack web application built with modern technologies and clean architecture. Focused on scalability and performance.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-0 mt-auto">
-                <div className="flex flex-wrap gap-3">
-                  <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">React</Badge>
-                  <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">TypeScript</Badge>
-                  <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">Node.js</Badge>
-                </div>
-              </CardContent>
-            </div>
-          </Card>
+          <Link href="/game" className="block">
+            <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2 cursor-pointer">
+              <div className="relative p-8 h-full flex flex-col">
+                <CardHeader className="p-0 mb-6">
+                  <CardTitle className="text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">Project Alpha</CardTitle>
+                  <CardDescription className="mt-3 text-lg text-gray-400 line-clamp-3 leading-relaxed">
+                    A full-stack web application built with modern technologies and clean architecture. Focused on scalability and performance.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-0 mt-auto">
+                  <div className="flex flex-wrap gap-3">
+                    <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">React</Badge>
+                    <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">TypeScript</Badge>
+                    <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">Node.js</Badge>
+                  </div>
+                </CardContent>
+              </div>
+            </Card>
+          </Link>
 
           <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2">
             <div className="relative p-8 h-full flex flex-col">
