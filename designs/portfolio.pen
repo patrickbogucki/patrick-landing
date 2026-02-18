@@ -627,7 +627,7 @@
                                   "id": "kMnip",
                                   "name": "tag3aText",
                                   "fill": "#F59E0B",
-                                  "content": "Astro",
+                                  "content": "Next.js",
                                   "fontFamily": "JetBrains Mono",
                                   "fontSize": 11,
                                   "fontWeight": "500"
@@ -2017,7 +2017,7 @@
                                       "id": "GTBwa",
                                       "name": "c3T1t",
                                       "fill": "#A1A1AA",
-                                      "content": "Astro",
+                                      "content": "Next.js",
                                       "fontFamily": "Inter",
                                       "fontSize": 11,
                                       "fontWeight": "500"
@@ -3127,7 +3127,7 @@
                                   "id": "hPM3q",
                                   "name": "c3t1t",
                                   "fill": "#8A8A8C",
-                                  "content": "Astro",
+                                  "content": "Next.js",
                                   "fontFamily": "Inter",
                                   "fontSize": 11
                                 }
@@ -4054,7 +4054,7 @@
                                       "id": "rr7gk",
                                       "name": "c3t1t",
                                       "fill": "#FFFFFF60",
-                                      "content": "Astro",
+                                      "content": "Next.js",
                                       "fontFamily": "Inter",
                                       "fontSize": 10
                                     }
@@ -4948,7 +4948,7 @@
                                   "id": "awjg8",
                                   "name": "c3t1t",
                                   "fill": "#A1A1AA",
-                                  "content": "Astro",
+                                  "content": "Next.js",
                                   "fontFamily": "Inter",
                                   "fontSize": 10,
                                   "fontWeight": "500"
@@ -5293,7 +5293,7 @@
               "id": "gYTQ0",
               "name": "footerRight",
               "fill": "#3F3F46",
-              "content": "Built with Astro",
+              "content": "Built with Next.js",
               "fontFamily": "Inter",
               "fontSize": 12
             }
