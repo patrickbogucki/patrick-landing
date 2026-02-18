@@ -6,11 +6,11 @@
     },
     {
       "source": "/game",
-      "destination": "https://higher-lower-three.vercel.app"
+      "destination": "https://higher-lower-three.vercel.app/game"
     },
     {
       "source": "/game/:path*",
-      "destination": "https://higher-lower-three.vercel.app/:path*"
+      "destination": "https://higher-lower-three.vercel.app/game/:path*"
     }
   ],
   "headers": [
