@@ -1,18 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
-    },
-    {
-      "source": "/game",
-      "destination": "https://higher-lower-three.vercel.app/game"
-    },
-    {
-      "source": "/game/:path*",
-      "destination": "https://higher-lower-three.vercel.app/game/:path*"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
