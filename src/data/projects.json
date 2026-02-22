@@ -1,9 +1,9 @@
 [
   {
     "title": "Higher / Lower",
-    "url": "/game",
-    "description": "A full-stack web application built with modern technologies and clean architecture. Focused on scalability and performance.",
-    "tags": ["React", "TypeScript", "Node.js"],
+    "url": "https://higher-lower.patrickbogucki.com",
+    "description": "A live multiplayer guessing game where a host presents numbers and players compete to predict whether the next value will be higher or lower. The last player standing wins.",
+    "tags": ["Next.js", "Socket.IO", "Express"],
     "color": "blue"
   },
   {
