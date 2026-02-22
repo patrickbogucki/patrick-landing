@@ -1,6 +1,6 @@
 [
   {
-    "title": "Project Alpha",
+    "title": "Higher / Lower",
     "url": "/game",
     "description": "A full-stack web application built with modern technologies and clean architecture. Focused on scalability and performance.",
     "tags": ["React", "TypeScript", "Node.js"],
