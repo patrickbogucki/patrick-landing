@@ -4,6 +4,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import projects from "@/data/projects.json"
+
+const badgeColors: Record<string, string> = {
+  blue: "bg-blue-500/10 text-blue-300 hover:bg-blue-500/20",
+  purple: "bg-purple-500/10 text-purple-300 hover:bg-purple-500/20",
+  pink: "bg-pink-500/10 text-pink-300 hover:bg-pink-500/20",
+  indigo: "bg-indigo-500/10 text-indigo-300 hover:bg-indigo-500/20",
+}
 
 export default function Home() {
   return (
@@ -61,79 +69,33 @@ export default function Home() {
 
         {/* Projects Grid */}
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:gap-10">
-          <Link href="/game" className="block">
-            <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2 cursor-pointer">
-              <div className="relative p-8 h-full flex flex-col">
-                <CardHeader className="p-0 mb-6">
-                  <CardTitle className="text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">Project Alpha</CardTitle>
-                  <CardDescription className="mt-3 text-lg text-gray-400 line-clamp-3 leading-relaxed">
-                    A full-stack web application built with modern technologies and clean architecture. Focused on scalability and performance.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-0 mt-auto">
-                  <div className="flex flex-wrap gap-3">
-                    <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">React</Badge>
-                    <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">TypeScript</Badge>
-                    <Badge variant="secondary" className="bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">Node.js</Badge>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
-          </Link>
-
-          <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2">
-            <div className="relative p-8 h-full flex flex-col">
-              <CardHeader className="p-0 mb-6">
-                <CardTitle className="text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">Project Beta</CardTitle>
-                <CardDescription className="mt-3 text-lg text-gray-400 line-clamp-3 leading-relaxed">
-                  An open-source tool that simplifies developer workflows and boosts productivity. Downloaded by over 10k developers.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-0 mt-auto">
-                <div className="flex flex-wrap gap-3">
-                  <Badge variant="secondary" className="bg-purple-500/10 text-purple-300 hover:bg-purple-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">Python</Badge>
-                  <Badge variant="secondary" className="bg-purple-500/10 text-purple-300 hover:bg-purple-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">CLI</Badge>
-                  <Badge variant="secondary" className="bg-purple-500/10 text-purple-300 hover:bg-purple-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">Open Source</Badge>
+          {projects.map((project) => {
+            const isExternal = project.url.startsWith("http")
+            const card = (
+              <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2 cursor-pointer">
+                <div className="relative p-8 h-full flex flex-col">
+                  <CardHeader className="p-0 mb-6">
+                    <CardTitle className="text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">{project.title}</CardTitle>
+                    <CardDescription className="mt-3 text-lg text-gray-400 line-clamp-3 leading-relaxed">
+                      {project.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-0 mt-auto">
+                    <div className="flex flex-wrap gap-3">
+                      {project.tags.map((tag) => (
+                        <Badge key={tag} variant="secondary" className={`${badgeColors[project.color] ?? badgeColors.blue} border-0 rounded-full px-4 py-1.5 text-sm transition-colors`}>
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
                 </div>
-              </CardContent>
-            </div>
-          </Card>
-
-          <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2">
-            <div className="relative p-8 h-full flex flex-col">
-              <CardHeader className="p-0 mb-6">
-                <CardTitle className="text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">Project Gamma</CardTitle>
-                <CardDescription className="mt-3 text-lg text-gray-400 line-clamp-3 leading-relaxed">
-                  Mobile-first design system with reusable components and comprehensive documentation.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-0 mt-auto">
-                <div className="flex flex-wrap gap-3">
-                  <Badge variant="secondary" className="bg-pink-500/10 text-pink-300 hover:bg-pink-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">Design System</Badge>
-                  <Badge variant="secondary" className="bg-pink-500/10 text-pink-300 hover:bg-pink-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">Figma</Badge>
-                  <Badge variant="secondary" className="bg-pink-500/10 text-pink-300 hover:bg-pink-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">CSS</Badge>
-                </div>
-              </CardContent>
-            </div>
-          </Card>
-
-          <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2">
-            <div className="relative p-8 h-full flex flex-col">
-              <CardHeader className="p-0 mb-6">
-                <CardTitle className="text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">Project Delta</CardTitle>
-                <CardDescription className="mt-3 text-lg text-gray-400 line-clamp-3 leading-relaxed">
-                  Data visualization dashboard with real-time analytics and interactive charts.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-0 mt-auto">
-                <div className="flex flex-wrap gap-3">
-                  <Badge variant="secondary" className="bg-indigo-500/10 text-indigo-300 hover:bg-indigo-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">D3.js</Badge>
-                  <Badge variant="secondary" className="bg-indigo-500/10 text-indigo-300 hover:bg-indigo-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">API</Badge>
-                  <Badge variant="secondary" className="bg-indigo-500/10 text-indigo-300 hover:bg-indigo-500/20 border-0 rounded-full px-4 py-1.5 text-sm transition-colors">Dashboard</Badge>
-                </div>
-              </CardContent>
-            </div>
-          </Card>
+              </Card>
+            )
+            if (!project.url) return <div key={project.title}>{card}</div>
+            if (isExternal) return <a key={project.title} href={project.url} target="_blank" rel="noopener noreferrer" className="block">{card}</a>
+            return <Link key={project.title} href={project.url} className="block">{card}</Link>
+          })}
         </div>
 
       </main>

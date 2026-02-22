@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Project Alpha",
+    "url": "/game",
+    "description": "A full-stack web application built with modern technologies and clean architecture. Focused on scalability and performance.",
+    "tags": ["React", "TypeScript", "Node.js"],
+    "color": "blue"
+  },
+  {
+    "title": "Project Beta",
+    "url": "",
+    "description": "An open-source tool that simplifies developer workflows and boosts productivity. Downloaded by over 10k developers.",
+    "tags": ["Python", "CLI", "Open Source"],
+    "color": "purple"
+  },
+  {
+    "title": "Project Gamma",
+    "url": "",
+    "description": "Mobile-first design system with reusable components and comprehensive documentation.",
+    "tags": ["Design System", "Figma", "CSS"],
+    "color": "pink"
+  },
+  {
+    "title": "Project Delta",
+    "url": "",
+    "description": "Data visualization dashboard with real-time analytics and interactive charts.",
+    "tags": ["D3.js", "API", "Dashboard"],
+    "color": "indigo"
+  }
+]
