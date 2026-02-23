@@ -11,6 +11,6 @@
     "url": "https://feedback-center.patrickbogucki.com",
     "description": "Feedback center launched from an action button in a modal. Allows the user to submit ideas, experiences, and issues. They can track each item and vote on other's ideas.",
     "tags": ["Node.js", "TypeScript", "Tailwind"],
-    "color": "indigo"
+    "color": "purple"
   }
 ]
