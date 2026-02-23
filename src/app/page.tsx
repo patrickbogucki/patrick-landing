@@ -34,7 +34,7 @@ export default function Home() {
                 Patrick Bogucki
               </h1>
             </div>
-            <p className="max-w-[700px] mx-auto md:mx-0 text-lg text-gray-400 md:text-2xl leading-relaxed font-light">
+            <p className="max-w-[700px] md:max-w-[840px] mx-auto md:mx-0 text-lg text-gray-400 md:text-2xl leading-relaxed font-light">
               Finding problems and building solutions. Welcome to my corner of the web.
             </p>
           </div>
