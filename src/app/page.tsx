@@ -13,6 +13,13 @@ const badgeColors: Record<string, string> = {
   indigo: "bg-indigo-500/10 text-indigo-300 hover:bg-indigo-500/20",
 }
 
+const cardColors: Record<string, { title: string; shadow: string }> = {
+  blue:   { title: "group-hover:text-blue-400",   shadow: "hover:shadow-blue-500/20" },
+  purple: { title: "group-hover:text-purple-400", shadow: "hover:shadow-purple-500/20" },
+  pink:   { title: "group-hover:text-pink-400",   shadow: "hover:shadow-pink-500/20" },
+  indigo: { title: "group-hover:text-indigo-400", shadow: "hover:shadow-indigo-500/20" },
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden bg-black">
@@ -72,10 +79,10 @@ export default function Home() {
           {projects.map((project) => {
             const isExternal = project.url.startsWith("http")
             const card = (
-              <Card className="group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2 cursor-pointer">
+              <Card className={`group relative overflow-hidden rounded-3xl border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:-translate-y-2 cursor-pointer ${(cardColors[project.color] ?? cardColors.blue).shadow}`}>
                 <div className="relative p-8 h-full flex flex-col">
                   <CardHeader className="p-0 mb-6">
-                    <CardTitle className="text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">{project.title}</CardTitle>
+                    <CardTitle className={`text-3xl font-bold text-white transition-colors ${(cardColors[project.color] ?? cardColors.blue).title}`}>{project.title}</CardTitle>
                     <CardDescription className="mt-3 text-lg text-gray-400 line-clamp-3 leading-relaxed">
                       {project.description}
                     </CardDescription>
