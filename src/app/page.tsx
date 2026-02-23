@@ -48,19 +48,19 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-4 pt-6 justify-center md:justify-start">
             <a href="https://www.linkedin.com/in/patrick-bogucki-5095b81b/?originalSubdomain=ca" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg" className="h-14 gap-3 rounded-full border-blue-500/20 bg-blue-500/10 px-8 text-lg text-blue-400 shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)] transition-all duration-300 hover:scale-110 hover:border-blue-400/50 hover:bg-blue-400/10 hover:text-blue-300 hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.5)]">
+              <Button variant="outline" size="lg" className="h-14 gap-3 rounded-full border-blue-500/20 bg-blue-500/10 px-8 text-lg text-blue-400 shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)] transition-all duration-300 cursor-pointer hover:scale-110 hover:border-blue-400/50 hover:bg-blue-400/10 hover:text-blue-300 hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.5)] dark:hover:bg-blue-400/10 dark:hover:text-blue-300">
                 <Linkedin className="h-6 w-6" />
                 LinkedIn
               </Button>
             </a>
             <a href="https://github.com/patrickbogucki" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg" className="h-14 gap-3 rounded-full border-purple-500/20 bg-purple-500/10 px-8 text-lg text-purple-400 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)] transition-all duration-300 hover:scale-110 hover:border-purple-400/50 hover:bg-purple-400/10 hover:text-purple-300 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.5)]">
+              <Button variant="outline" size="lg" className="h-14 gap-3 rounded-full border-purple-500/20 bg-purple-500/10 px-8 text-lg text-purple-400 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)] transition-all duration-300 cursor-pointer hover:scale-110 hover:border-purple-400/50 hover:bg-purple-400/10 hover:text-purple-300 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.5)] dark:hover:bg-purple-400/10 dark:hover:text-purple-300">
                 <Github className="h-6 w-6" />
                 GitHub
               </Button>
             </a>
             <a href="mailto:patrickbogucki@gmail.com">
-              <Button variant="outline" size="lg" className="h-14 gap-3 rounded-full border-emerald-500/20 bg-emerald-500/10 px-8 text-lg text-emerald-400 shadow-[0_0_20px_-5px_rgba(16,185,129,0.3)] transition-all duration-300 hover:scale-110 hover:border-emerald-400/50 hover:bg-emerald-400/10 hover:text-emerald-300 hover:shadow-[0_0_30px_-5px_rgba(16,185,129,0.5)]">
+              <Button variant="outline" size="lg" className="h-14 gap-3 rounded-full border-emerald-500/20 bg-emerald-500/10 px-8 text-lg text-emerald-400 shadow-[0_0_20px_-5px_rgba(16,185,129,0.3)] transition-all duration-300 cursor-pointer hover:scale-110 hover:border-emerald-400/50 hover:bg-emerald-400/10 hover:text-emerald-300 hover:shadow-[0_0_30px_-5px_rgba(16,185,129,0.5)] dark:hover:bg-emerald-400/10 dark:hover:text-emerald-300">
                 <Mail className="h-6 w-6" />
                 Email
               </Button>
